@@ -59,7 +59,7 @@ public class XmlImport {
 				System.out.println(element.getElementsByTagName("uniqueID").item(0).getTextContent());
 				//if(nodList.item(i).hasChildNodes()) childNode(nodList.item(i).getChildNodes());
 				
-				data.put(element.getElementsByTagName("uniqueID").item(0).getTextContent(), nodList.getLength()+nodList.item(i).getNodeName());
+				data.put(element.getElementsByTagName("uniqueID").item(0).getTextContent(), nodList.item(i).getNodeName());
 			}
 		return data;
 	}
